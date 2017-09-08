@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="img" type="file" />
+	</body>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('#img').on('change',function(){
+			console.log(this.files[0])
+			console.log(Math.floor(this.files[0].size/1024)+'KB')
+		})
+	</script>
+</html>
